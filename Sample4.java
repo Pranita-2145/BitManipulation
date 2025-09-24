@@ -1,8 +1,8 @@
 package BitManipulation;
 
 public class Sample4 {
-
-    // Clear ith bit
+/* 
+ // Clear ith bit
     public static int Clearith(int n, int i){
         int bitmask = ~(1 << i);
         return n & bitmask;
@@ -20,9 +20,19 @@ public class Sample4 {
         int bitmask = (~0) << i;
         return n & bitmask;
     }
+        */
+
+
+        public static int clearbitsInrange(int n, int i, int j){
+            int a = ((~0)<<(j+1));
+            int b = (1<<i) - 1;
+            int bitmask = a | b;
+            return n & bitmask;
+        }
 
     public static void main(String[] args) {
-        System.out.println(Update(10, 2, 3)); // Output: 14
-        System.out.println(LastBit(10, 2));   // Output: 8
+       // System.out.println(Update(10, 2, 3)); // Output: 14
+        //System.out.println(LastBit(10, 2));   // Output: 8
+        System.out.println(clearbitsInrange(10, 2, 4));
     }
 }

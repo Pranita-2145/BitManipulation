@@ -3,3 +3,4 @@ Index of Topics covered
 2. Sample2.java = Get ith bit
 3. Sample3.java = Set ith Bit
 4. Sample4.java = Clear Last bit, Clear ith bit & Update Bit 
+5. Sample5.java = Count set bits, Fast Exponentiation
